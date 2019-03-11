@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('../fonts/latohairline.woff2') format('woff2'), url('../fonts/latohairline.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('../fonts/latohairlineitalic.woff2') format('woff2'), url('../fonts/latohairlineitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    min-height: 100%;    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 30px;
+	line-height: 1.2;
+}
+
+
+p {
+    margin: 0 0 20px;
+}
+
+body{
+	font: 300 16px/1.5 'Lato', sans-serif;
+	color: #000;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1220px;
+}
+
+/* Typography */
+a {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+    text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: rgb(246, 150, 121);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.ba-button{
+	display: inline-block;
+}
+
+section {
+    padding: 101px 0;
+}
+
+.ba-section-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+}
+
+.ba-section-title::after {
+    content: '';
+    width: 90px;
+    height: 1px;
+    background-color: #F38377;
+    position: absolute;
+    top: 32px;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.ba-intro {
+background: rgb(246, 150, 121) url(../img/intro-bg.jpg) no-repeat 50%;
+background-size: cover;
+}
+
+.ba-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.ba-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ba-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ba-logo {
+    margin-left: -31px;
+}
+
+.ba-menu a {
+    margin-left: 29px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.045em;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+
+.ba-intro {
+    padding: 340px 0 218px;
+}
+
+.ba-intro-inner {
+    color: #fff;
+    text-align: center;
+}
+
+.ba-intro-text {
+    font-family: 'Times New Roman';    
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+    margin-bottom: -3px;
+    margin-left: 20px
+}
+
+.ba-page-title {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+
+.ba-button-hollow {
+    padding: 17px 79px;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 36px;
+    line-height: 1.57;
+}
+
+.ba-get-rewarded {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.ba-get-rewarded a {
+    text-decoration: underline;
+}
+
+.ba-description-inner {
+    display: flex;
+    margin-left: -50px;
+}
+
+.ba-description-item {
+    width: 33.33%;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.ba-description-item img {
+    margin: 0 auto 15px;
+}
+
+.ba-description-item p {
+    letter-spacing: 0.045em;
+    line-height: 1.59;
+}
+
+.ba-introduction {
+    background-color: #F4F4F4;
+    padding: 102px 0 0;
+}
+
+.ba-introduction-inner {
+    display: flex;
+    margin-left: -135px;
+}
+
+.ba-introduction-img, 
+.ba-introduction-text {
+    width: 50%;
+    padding-left: 116px;
+}
+
+.ba-introduction-text {
+    padding-top: 50px;       
+}
+
+.ba-introduction-text p {
+    margin-bottom: 30px;
+    line-height: 1.59;
+    letter-spacing: 0.0475em; 
+}
+
+
+.ba-introduction .ba-section-title::after {
+    right: auto;
+    left: 0;
+    top: 34px;
+}
+
+.ba-os-icons {
+display: flex;
+margin-left: -10px;
+}
+
+.ba-os-icons img {
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.ba-introduction-img {
+    margin-top: -16px;
+}
+
+.ba-testimonials {
+    background: #473546 url(../img/testimonials-bg.jpg) no-repeat 50%;
+    background-size: cover;
+    padding: 80px 0 108px;
+}
+
+.ba-testimonials-inner {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.ba-single-testimony {
+    text-align: center;
+}
+
+.ba-single-testimony img {
+    border-radius: 50%;
+    /* border: 5px solid #948B94; */
+    margin: 0 auto 20px;
+}
+
+.ba-single-testimony p {
+    font-family: 'Lato Hairline', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 0.007em;
+    margin-bottom: 15px;
+}
+
+.ba-single-testimony .ba-testimony-name {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.ba-cuisines {
+    text-align: center;
+    padding: 97px 0 0;
+}
+
+.ba-cuisines .ba-section-title {
+    margin-bottom: 47px;
+}
+
+.ba-cuisines .ba-section-title::after {
+    top: 35px;
+}
+
+.ba-cuisines-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ba-cuisine-item {
+    min-width: 20%;
+    min-height: 225px;
+}
+
+.ba-cuisine-item:nth-child(1) {
+    background: #F38377 url(../img/italian.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(2) {
+    background: #F38377 url(../img/indian.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(3) {
+    background: #F38377 url(../img/french.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(4) {
+    background: #F38377 url(../img/steakhouse.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(5) {
+    background: #F38377 url(../img/seafood.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(6) {
+    background: #F38377 url(../img/sushi.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(7) {
+    background: #F38377 url(../img/mexican.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(8) {
+    background: #F38377 url(../img/chinese.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(9) {
+    background: #F38377 url(../img/pizza.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item:nth-child(10) {
+    background: #F38377 url(../img/american.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.ba-cuisine-item a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.ba-cuisine-item p {
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    padding-top: 8px;
+}
+
+.ba-cuisine-item h3 {
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+}
+
+.ba-features {
+    padding: 46px 0 37px;
+}
+
+.ba-features-inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ba-features-inner p {
+    letter-spacing: 0.055em;
+}
+
+.ba-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: -3px;    
+}
+
+footer {
+    background-color: #F4F4F4;
+    color: rgba(139, 139, 139, 0.5);
+    border-top: 1px solid #E9E9E9;
+    padding: 37px 0 14px;
+    font-size: 14px;
+}
+
+.ba-footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ba-design {
+    color:  #8b8b8b;
+    letter-spacing: 0.175em;
+}
+
+.ba-design a {
+    color: #000;
+    margin-left: 10px;
+    font-weight: 700;    
+}
