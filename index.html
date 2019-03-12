@@ -8,6 +8,8 @@
 	<meta name="description" content="" />
 	<link rel="icon" href="favicon.png"/>
 	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -50,7 +52,7 @@
 			<div class="ba-container">
 				<div class="ba-description-inner">
 					<div class="ba-description-item">
-						<img src="img/icon1.svg" alt="">
+						<img src="img/icon1.png" alt="Hamburger">
 						<h2 class="ba-section-title">GET INSPIRED</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisc 
 							Pellentesque vel enim a elit viverra elementuma.
@@ -58,7 +60,7 @@
 					</div>
 					<!-- /.ba-description-item -->
 					<div class="ba-description-item">
-						<img src="img/icon2.svg" alt="">
+						<img src="img/icon2.png" alt="Money">
 						<h2 class="ba-section-title">GET REWARDED</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisc 
 							Pellentesque vel enim a elit viverra elementuma.
@@ -66,7 +68,7 @@
 					</div>
 					<!-- /.ba-description-item -->
 					<div class="ba-description-item">
-						<img src="img/icon3.svg" alt="">
+						<img src="img/icon3.png" alt="Chef">
 						<h2 class="ba-section-title">GET SOCIAL</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisc 
 							Pellentesque vel enim a elit viverra elementuma.
@@ -100,7 +102,8 @@ Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
 malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
 ante, a mattis massa.</p>
 <div class="ba-os-icons">
-	<img src="img/appstore.jpg" alt="AppStore"><img src="img/g-play.jpg" alt="Google Play">
+	<a href="#"><img src="img/appstore.jpg" alt="AppStore"></a>
+	<a href="#"><img src="img/g-play.jpg" alt="Google Play"></a>
 </div>
 					</div>
 					<!-- /.ba-introduction-text -->					
@@ -114,12 +117,26 @@ ante, a mattis massa.</p>
 			<div class="ba-container">
 				<div class="ba-testimonials-inner">
 					<div class="ba-single-testimony">
-						<img src="img/testimony.jpg" alt="Michael Dawson">					
+						<img src="img/testimony.png" alt="Michael Dawson">					
 						<p>"I am so happy because I found this recipe, and it just made my life easier.
 	Thanks  so much for sharing!"</p>
 						<p class="ba-testimony-name">- Michael Dawson, San Francisco, CA -</p>
 					</div>
 					<!-- /.ba-single-testimony -->
+					<div class="ba-single-testimony">
+							<img src="img/testimony.png" alt="Michael Dawson">					
+							<p>"I am so happy because I found this recipe, and it just made my life easier.
+		Thanks  so much for sharing!"</p>
+							<p class="ba-testimony-name">- Michael Dawson, San Francisco, CA -</p>
+						</div>
+						<!-- /.ba-single-testimony -->
+						<div class="ba-single-testimony">
+								<img src="img/testimony.png" alt="Michael Dawson">					
+								<p>"I am so happy because I found this recipe, and it just made my life easier.
+			Thanks  so much for sharing!"</p>
+								<p class="ba-testimony-name">- Michael Dawson, San Francisco, CA -</p>
+							</div>
+							<!-- /.ba-single-testimony -->
 				</div>
 				<!-- /.ba-testimonials-inner -->
 			</div>
@@ -130,44 +147,74 @@ ante, a mattis massa.</p>
 			<h2 class="ba-section-title">BROWSE BY CUISINES</h2>
 			<div class="ba-cuisines-inner">
 				<div class="ba-cuisine-item">
-					<a href="#"><p>327 Recipes</p>
-					<h3>ITALIAN</h3></a>
+					<a href="#">
+						<img src="img/italian.jpg" alt="Italian Cuisine">
+						<p>327 Recipes</p>
+						<h3>ITALIAN</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>856 Recipes</p>
-					<h3>INDIAN</h3></a>
+					<a href="#">
+						<img src="img/indian.jpg" alt="Indian Cuisine">
+						<p>856 Recipes</p>
+						<h3>INDIAN</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>27 Recipes</p>
-					<h3>FRENCH</h3></a>
+					<a href="#">
+						<img src="img/french.jpg" alt="French Cuisine">
+						<p>27 Recipes</p>
+						<h3>FRENCH</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>174 Recipes</p>
-					<h3>STEAKHOUSE</h3></a>
+					<a href="#">
+						<img src="img/steakhouse.jpg" alt="Steakhouse">
+						<p>174 Recipes</p>
+						<h3>STEAKHOUSE</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>731 Recipes</p>
-					<h3>SEAFOOD</h3></a>
+					<a href="#">
+						<img src="img/seafood.jpg" alt="Seafood">
+						<p>731 Recipes</p>
+						<h3>SEAFOOD</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>237 Recipes</p>
-					<h3>SUSHI</h3></a>
+					<a href="#">
+						<img src="img/sushi.jpg" alt="Sushi">
+						<p>237 Recipes</p>
+						<h3>SUSHI</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>529 Recipes</p>
-					<h3>MEXICAN</h3></a>
+					<a href="#">
+						<img src="img/mexican.jpg" alt="Mexican Cuisine">
+						<p>529 Recipes</p>
+						<h3>MEXICAN</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>145 Recipes</p>
-					<h3>CHINESE</h3></a>
+					<a href="#">
+						<img src="img/chinese.jpg" alt="Chinese Cuisine">
+						<p>145 Recipes</p>
+						<h3>CHINESE</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>327 Recipes</p>
-					<h3>PIZZA</h3></a>
+					<a href="#">
+						<img src="img/pizza.jpg" alt="Pizza">
+						<p>327 Recipes</p>
+						<h3>PIZZA</h3>
+					</a>
 				</div>
 				<div class="ba-cuisine-item">
-					<a href="#"><p>1.437 Recipes</p>
-					<h3>AMERICAN</h3></a>
+					<a href="#">
+						<img src="img/american.jpg" alt="American Cuisine">
+						<p>1.437 Recipes</p>
+						<h3>AMERICAN</h3>
+					</a>
 				</div>
 			</div>
 			<!-- /.ba-cuisines-inner -->
@@ -216,6 +263,17 @@ ante, a mattis massa.</p>
 			</div>
 		</div>
 	</footer>
-
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/migrate.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+  $('.ba-testimonials-inner').slick({
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+	dots: true
+  });
+});</script>
 </body>
 </html>

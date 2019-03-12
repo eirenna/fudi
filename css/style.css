@@ -6,6 +6,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Lato Hairline';
     src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('../fonts/latohairlineitalic.woff2') format('woff2'), url('../fonts/latohairlineitalic.woff') format('woff');
@@ -20,7 +21,7 @@ html {
 
 html,
 body {
-    min-height: 100%;    
+    min-height: 100%;
 }
 
 *,
@@ -35,8 +36,8 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 30px;
-	line-height: 1.2;
+    margin: 0 0 30px;
+    line-height: 1.2;
 }
 
 
@@ -44,27 +45,27 @@ p {
     margin: 0 0 20px;
 }
 
-body{
-	font: 300 16px/1.5 'Lato', sans-serif;
-	color: #000;
+body {
+    font: 300 16px/1.5 'Lato', sans-serif;
+    color: #000;
 }
 
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1220px;
+.ba-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1220px;
 }
 
 /* Typography */
 a {
     transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
     text-decoration: none;
-	color: #fff;
+    color: #fff;
 }
 
 a:hover {
-	color: rgb(246, 150, 121);
+    color: rgb(246, 150, 121);
 }
 
 img {
@@ -72,8 +73,8 @@ img {
     display: block;
 }
 
-.ba-button{
-	display: inline-block;
+.ba-button {
+    display: inline-block;
 }
 
 section {
@@ -103,8 +104,8 @@ section {
 }
 
 .ba-intro {
-background: rgb(246, 150, 121) url(../img/intro-bg.jpg) no-repeat 50%;
-background-size: cover;
+    background: rgb(246, 150, 121) url(../img/intro-bg.jpg) no-repeat 50%;
+    background-size: cover;
 }
 
 .ba-header {
@@ -151,7 +152,7 @@ background-size: cover;
 }
 
 .ba-intro-text {
-    font-family: 'Times New Roman';    
+    font-family: 'Times New Roman';
     font-size: 36px;
     font-weight: 700;
     font-style: italic;
@@ -211,28 +212,32 @@ background-size: cover;
 
 .ba-introduction {
     background-color: #F4F4F4;
-    padding: 102px 0 0;
+    padding: 80px 0 0;
 }
 
 .ba-introduction-inner {
     display: flex;
-    margin-left: -135px;
 }
 
-.ba-introduction-img, 
+.ba-introduction-img,
 .ba-introduction-text {
     width: 50%;
-    padding-left: 116px;
 }
 
 .ba-introduction-text {
-    padding-top: 50px;       
+    padding-top: 75px;
+    
 }
 
 .ba-introduction-text p {
     margin-bottom: 30px;
     line-height: 1.59;
-    letter-spacing: 0.0475em; 
+    letter-spacing: 0.0468em;
+}
+
+.ba-introduction-img {
+    margin-right: 116px;
+    margin-left: -17px
 }
 
 
@@ -243,8 +248,8 @@ background-size: cover;
 }
 
 .ba-os-icons {
-display: flex;
-margin-left: -10px;
+    display: flex;
+    margin-left: -10px;
 }
 
 .ba-os-icons img {
@@ -252,14 +257,10 @@ margin-left: -10px;
     border-radius: 6px;
 }
 
-.ba-introduction-img {
-    margin-top: -16px;
-}
-
 .ba-testimonials {
     background: #473546 url(../img/testimonials-bg.jpg) no-repeat 50%;
     background-size: cover;
-    padding: 80px 0 108px;
+    padding: 80px 0 70px;
 }
 
 .ba-testimonials-inner {
@@ -273,7 +274,7 @@ margin-left: -10px;
 
 .ba-single-testimony img {
     border-radius: 50%;
-    /* border: 5px solid #948B94; */
+    border: 5px solid rgba(255, 255, 255, .4);
     margin: 0 auto 20px;
 }
 
@@ -288,6 +289,22 @@ margin-left: -10px;
 .ba-single-testimony .ba-testimony-name {
     font-size: 18px;
     font-style: italic;
+    margin-bottom: 25px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 11px;
+    opacity: 1;
+    color: rgba(255, 255, 255, .2);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
 }
 
 .ba-cuisines {
@@ -309,58 +326,8 @@ margin-left: -10px;
 }
 
 .ba-cuisine-item {
-    min-width: 20%;
+    width: 20%;
     min-height: 225px;
-}
-
-.ba-cuisine-item:nth-child(1) {
-    background: #F38377 url(../img/italian.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(2) {
-    background: #F38377 url(../img/indian.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(3) {
-    background: #F38377 url(../img/french.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(4) {
-    background: #F38377 url(../img/steakhouse.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(5) {
-    background: #F38377 url(../img/seafood.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(6) {
-    background: #F38377 url(../img/sushi.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(7) {
-    background: #F38377 url(../img/mexican.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(8) {
-    background: #F38377 url(../img/chinese.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(9) {
-    background: #F38377 url(../img/pizza.jpg) no-repeat 50%;
-    background-size: cover;
-}
-
-.ba-cuisine-item:nth-child(10) {
-    background: #F38377 url(../img/american.jpg) no-repeat 50%;
-    background-size: cover;
 }
 
 .ba-cuisine-item a {
@@ -368,7 +335,19 @@ margin-left: -10px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    position: relative;
+}
+
+.ba-cuisine-item a img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .ba-cuisine-item p {
@@ -379,12 +358,14 @@ margin-left: -10px;
     letter-spacing: 0.05em;
     margin-bottom: 0;
     padding-top: 8px;
+    z-index: 1;
 }
 
 .ba-cuisine-item h3 {
     font-size: 36px;
     letter-spacing: 0.06em;
     text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+    z-index: 1;
 }
 
 .ba-features {
@@ -404,7 +385,7 @@ margin-left: -10px;
 .ba-number {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: -3px;    
+    margin-bottom: -3px;
 }
 
 footer {
@@ -421,12 +402,12 @@ footer {
 }
 
 .ba-design {
-    color:  #8b8b8b;
+    color: #8b8b8b;
     letter-spacing: 0.175em;
 }
 
 .ba-design a {
     color: #000;
     margin-left: 10px;
-    font-weight: 700;    
+    font-weight: 700;
 }
