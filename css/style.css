@@ -201,9 +201,17 @@ section {
     padding-left: 50px;
 }
 
-.ba-description-item img {
+.ba-round {
+    width: 107px;
+    height: 107px;
     margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .ba-description-item p {
     letter-spacing: 0.045em;
