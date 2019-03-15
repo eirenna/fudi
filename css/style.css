@@ -114,6 +114,8 @@ section {
     left: 0;
     right: 0;
     z-index: 2;
+    background: linear-gradient(to bottom, rgba(63, 31, 21, 0.8), transparent);
+    
 }
 
 .ba-header-bar {
@@ -232,8 +234,13 @@ section {
     width: 50%;
 }
 
+.ba-introduction-img {
+    display: flex;
+    align-items: flex-end;
+}
+
 .ba-introduction-text {
-    padding-top: 75px;
+    padding: 75px 0;
     
 }
 
@@ -252,7 +259,7 @@ section {
 .ba-introduction .ba-section-title::after {
     right: auto;
     left: 0;
-    top: 34px;
+    bottom: -5px;
 }
 
 .ba-os-icons {
@@ -335,7 +342,6 @@ section {
 
 .ba-cuisine-item {
     width: 20%;
-    min-height: 225px;
 }
 
 .ba-cuisine-item a {
@@ -347,15 +353,22 @@ section {
     position: relative;
 }
 
-.ba-cuisine-item a img {
+.ba-cuisine-item a img {    
+    width: 100%;
+    display: block;
+}
+
+.ba-cuisine-text {
     position: absolute;
-    z-index: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ba-cuisine-item p {
